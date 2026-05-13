@@ -554,9 +554,12 @@
   }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 640px) {
-    .modal { grid-template-columns: 1fr; }
-    .modal-img { aspect-ratio: 4/3; }
+  @media (max-width: 768px) {
+    .modal { grid-template-columns: 1fr; max-height: 95vh; }
+    .modal-img { aspect-ratio: 4/3; max-height: 280px; }
+    .modal-content { padding: 24px 20px; }
+    .modal-title { font-size: 22px; }
+    .modal-desc { font-size: 12px; max-height: 120px; overflow-y: auto; }
     .footer-inner { grid-template-columns: 1fr; gap: 30px; }
     nav { gap: 20px; flex-wrap: wrap; }
     .products-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; padding: 0 16px 60px; }
